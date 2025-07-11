@@ -1,0 +1,13 @@
+{
+  "apphosting": {
+    "backendId": "bug-next-slots-app-hstng-mcve",
+    "rootDir": "/",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
+  }
+}
