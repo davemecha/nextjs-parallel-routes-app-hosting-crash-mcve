@@ -44,9 +44,9 @@ These issues may be related. I'm not sure...
     When you open `http://localhost:3000` (or your port), you will see both the main page content and the parallel route content load correctly.
 
 4.  **Deploy to Firebase App Hosting (It will fail):**
- This bug can be observed when deploying to platforms like Firebase App Hosting or Google Cloud Run.
+This bug can be observed when deploying to platforms like Firebase App Hosting or Google Cloud Run.
 
- You can see a hosted demo reproducing the bug here: [https://bug-demo--bug-next-slots-mcve.us-central1.hosted.app/de](https://bug-demo--bug-next-slots-mcve.us-central1.hosted.app/de). On the initial load, you may need to manually refresh the page to trigger the `ChunkLoadError`.
+To see the bug in action, check the [hosted demo reproducing the bug](https://bug-demo--bug-next-slots-mcve.us-central1.hosted.app/de). On the initial load, you may need to manually refresh the page to trigger the `ChunkLoadError`. There is also a [demo with the applied workaround](https://fix-demo--bug-next-slots-mcve.us-central1.hosted.app/de)
 
 ## The Workaround
 
