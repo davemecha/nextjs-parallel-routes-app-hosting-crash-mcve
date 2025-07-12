@@ -1,40 +1,21 @@
 import type {NextConfig} from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig: NextConfig = {
-  /* config options here */
-  // typescript: {
-  //   ignoreBuildErrors: true,
-  // },
-  // eslint: {
-  //   ignoreDuringBuilds: true,
-  // },
-  // images: {
-  //   remotePatterns: [
+  // rewrites: async () => ({
+  //   beforeFiles: [
   //     {
-  //       protocol: 'https',
-  //       hostname: 'placehold.co',
-  //       port: '',
-  //       pathname: '/**',
+  //       source: '/_next/static/chunks/app/:folder*/@:slotName/:path*',
+  //       destination: '/_next/static/chunks/app/:folder*/%40:slotName/:path*',
   //     },
   //   ],
-  // },
-  // =================== WORKAROUNDS FOR PARALLEL ROUTE BUG ===================
-  // The bug described in this MCVE (https://github.com/vercel/next.js/issues/71626)
-  // can be worked around by using one of the following configurations.
-  //
-  // OPTION 1: Disable Partial Prerendering (PPR)
-  // This is the recommended workaround as of Next.js 14.2.
-  // experimental: {
-  //   ppr: false,
-  // },
-  //
-  // OPTION 2: Enable Trailing Slashes
-  // This changes URL handling and can also resolve the issue.
-  // trailingSlash: true,
-  // ========================================================================
+  //   afterFiles: [],
+  //   fallback: [],
+  // }),
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
