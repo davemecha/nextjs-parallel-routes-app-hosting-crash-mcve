@@ -42,15 +42,22 @@ export default async function RootLayout({
             </main>
             <footer className="w-full p-4 text-center text-sm text-muted-foreground">
               <p>
-                MCVE for Next.js bug{' '}
-                <a
-                  href="https://github.com/vercel/next.js/issues/71626"
+                MCVE for next-intl bug{' '}
+                <a href="https://github.com/amannn/next-intl/issues/255"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium text-primary underline-offset-4 hover:underline"
                 >
-                  #71626
+                  amannn/next-intl#255
+
                 </a>
+              </p>
+              <p>
+                Code for repo on <a href="https://github.com/davemecha/nextjs-parallel-routes-crash-mcve"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-primary underline-offset-4 hover:underline"
+                >GitHub</a>
               </p>
             </footer>
           </div>
